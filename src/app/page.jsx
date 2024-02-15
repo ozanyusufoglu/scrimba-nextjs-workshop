@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Link from "next/link";
+import Posts from "./posts/page";
 
 const blogContentData = [
   {
@@ -35,22 +36,6 @@ const blogContentData = [
 
 export default function Home() {
 
-  const blogCards = blogContentData.map(blog => {
-    return <div className={styles.card}
-      key={blog.id}>
-      <h2>{blog.title}</h2>
-      <ul> {
-        blog.previewItems.map((item, index) => (
-          <li key={index}>{item}</li>
-        ))
-      }
-      </ul>
-      <button>
-        <Link href={`/posts/${blog.title}`}>Read more</Link>
-      </button>
-    </div>
-  })
-
   return (
     <main className={styles.main}>
       <section className={styles.hero}>
@@ -80,7 +65,7 @@ export default function Home() {
       </section>
 
       <section className={styles.blog}>
-        {blogCards}
+        <Posts />
       </section>
 
       {/* <section>
