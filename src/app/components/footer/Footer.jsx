@@ -7,8 +7,11 @@ export default function Footer() {
 
     return (
         <div className={styles.component}>
-            <p>This is the footer content</p>
-            <h4>{date.toDateString()}</h4>
+            <p>Built by Ozan with 🐵🧠</p>
+            <br />
+            <h4>2024</h4>
+            <br />
+
         </div>
     )
 }
