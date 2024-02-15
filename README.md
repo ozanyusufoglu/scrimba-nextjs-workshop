@@ -12,7 +12,6 @@
 ## Theory
 
 - Presentation
-- https://docs.google.com/presentation/d/1Tpmt9tuBOgac2mw4o3FaV93r069lqiiOKImoebjOcbY/edit?usp=sharing
   - What’s NEXTjs Frameworks
   - Frameworks vs UI libraries
   - Frameworks can be opinionated, like UI libraries
