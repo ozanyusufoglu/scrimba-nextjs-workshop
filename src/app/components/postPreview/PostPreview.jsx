@@ -1,6 +1,5 @@
 import Link from "next/link"
 
-
 export default function PostPreview({ slug, id, title, previewItems }) {
 
     return <div className="postPreview"
