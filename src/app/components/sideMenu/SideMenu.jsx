@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./sidemenu.module.scss"
+import styles from "./sidemenu.module.css"
 
 export default function SideMenu({
     showArchived,
@@ -16,24 +16,16 @@ export default function SideMenu({
     }
 
     const menuItems = [{
-        title: "New",
-        emoji: "➕",
-        onClick: () => setShowNewTaskInput(prev => !prev)
-    }, {
-        title: "Goals",
-        emoji: "🎯",
+        title: "Counter",
+        emoji: "⏰",
         onClick: () => setShowGoalsController(prev => !prev)
     }, {
-        title: "Habits",
-        emoji: "🪤",
+        title: "Calculator",
+        emoji: "🧮",
         onClick: () => setShowHabitController(prev => !prev)
     }, {
-        title: "Archive",
-        emoji: "🗄️",
-        onClick: toggleCategoryTab
-    }, {
-        title: "Spotlight",
-        emoji: "🔦",
+        title: "Text editor",
+        emoji: "📄",
         onClick: toggleCategoryTab
     }, {
         title: "Bin",
@@ -41,14 +33,11 @@ export default function SideMenu({
         onClick: () => { alert("no item in the bin") }
     }]
 
-    function handlePinClick() {
-        setAutoHideOn(prev => !prev)
-    }
 
     const menuElements = menuItems.map((item, index) => {
         return <div key={index}
             className={styles.sideMenuItem}
-            style={elementStyle}>
+        >
             <p className={styles.itemEmoji}>{item.emoji}</p>
             <p className={styles.itemTitle}>{item.title}</p>
         </div>

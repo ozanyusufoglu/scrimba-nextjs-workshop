@@ -5,6 +5,10 @@
     gap: 1rem;
 }
 
+.count {
+    font-size: 10rem;
+}
+
 .buttonsContainer {
     display: flex;
     gap: 1rem;

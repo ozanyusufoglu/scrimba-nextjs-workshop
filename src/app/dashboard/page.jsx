@@ -19,10 +19,10 @@ export default function Page() {
             <section>
                 <div className={styles.innerContainer}>
                     <h2>Here is a dynamic App</h2>
-                    <p>{count}</p>
+                    <p className={styles.count}>{count}</p>
                     <div className={styles.buttonsContainer}>
-                        <button onClick={handleIncrease}>Increase me</button>
                         <button onClick={handleDecrease}>Decrease me</button>
+                        <button onClick={handleIncrease}>Increase me</button>
                     </div></div>
             </section>
         </div >
