@@ -1,0 +1,11 @@
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,0 +1,22 @@
+.component {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    background-color: lavender;
+}
+
+.component button {
+    background-color: white;
+}
+
+.headerItem {
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+}
+
+.headerItem:hover {
+    transform: translateY(-3px);
+    color: blueviolet
+}
